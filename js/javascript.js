@@ -20,11 +20,11 @@
 var nombreCase= parseInt(prompt('Quel nombre de case souhaitez-vous afficher?'));     //Affiche la question à l'utilisateur et affecte la réponse à la variable en s'assurant que ce soit un nombre//
 var nombre;
 nombre=1;
-while (nombre <= nombreCase) {
+while (nombre <= nombreCase) {                                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur
 	var newLi = document.createElement('li');
 	var newLiText = document.createTextNode(nombre);
 	document.getElementById('liste').appendChild(newLi);
 	newLi.appendChild(newLiText);
-	nombre++; 
+	nombre++;                                                    //Ajoute +1 au nombre à chaque tour//
 }
 
