@@ -1,0 +1,27 @@
+body {
+	background-color:#CFDEE7;                /*Couleur du fond*/
+}
+
+h1 {                                         /*Titre*/
+	font-family: Helvetica, sans-serif;      /*Typo*/
+	font-size: 5em;                          /*Taille de la typo*/
+	color: #4472CA;                          /*Couleur de la typo*/
+	text-align: center;                      /*Centrage du titre*/
+}
+
+ul {                                         /*Liste en elle même*/
+	display: flex;                           /*Dispose les éléments de la liste en ligne*/
+	flex-wrap: wrap;                         /*Permet le retour à la ligne des éléments si besoin*/
+}
+
+li {                                         /*Elements de la liste*/
+	display: flex;                           /*Permet de centrer le contenu des éléments de la liste*/            
+	justify-content: center;                 /*Centrage horizontal*/        
+	align-items: center;                     /*Centrage vertical*/
+	list-style: none;                        /*Enlève les puces de la liste*/
+	color: #5E7CE2;                          /*Couleur de la typo*/
+	width: 40px;                             /*Taille de l'élément en largeur*/
+	height: 40px;                            /*Taille de l'élément en hauteur*/
+	border:1px solid #92B4F4;                /*Contour des éléments, largeur du contour, type, couleur*/
+	
+}
