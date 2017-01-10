@@ -17,16 +17,22 @@
 
 //////////////////////////////////////////////Etape 4////////////////////////////////////////////////////////////////////////
 
-var nombreCase= parseInt(prompt('Quel nombre de case souhaitez-vous afficher?'));     //Affiche la question à l'utilisateur et affecte la réponse à la variable en s'assurant que ce soit un nombre//
+var nombreCase= parseInt(prompt('Quel nombre de case souhaitez-vous afficher? Entre 1 et 1000'));     //Affiche la question à l'utilisateur et affecte la réponse à la variable en s'assurant que ce soit un nombre//
 var nombre;
 nombre = 1;
-
-while (nombre <= nombreCase) {                                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur/:
+i=1;
+if (nombreCase<=1000) {
+while (i <=1000 && nombre <= nombreCase) {                                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur/:
 	var newLi = document.createElement('li');
 	var newLiText = document.createTextNode(nombre);
 	document.getElementById('liste').appendChild(newLi);
 	newLi.appendChild(newLiText);
-	nombre++;                                                    //Ajoute +1 au nombre à chaque tour//
+	nombre++; 
+	i++;														//Ajoute +1 au nombre à chaque tour//
+}
+}
+else {
+	alert('Attention! Choisir un nombre entre 1 et 1000');
 }
 
 //while (i <100000 && nombre <= nombreCase) {                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur/:
