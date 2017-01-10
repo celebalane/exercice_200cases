@@ -9,9 +9,15 @@ h1 {                                         /*Titre*/
 	text-align: center;                      /*Centrage du titre*/
 }
 
+article {
+	margin-left: -50px;
+}
+
+
 ul {                                         /*Liste en elle même*/
 	display: flex;                           /*Dispose les éléments de la liste en ligne*/
 	flex-wrap: wrap;                         /*Permet le retour à la ligne des éléments si besoin*/
+	justify-content: center;
 }
 
 li {                                         /*Elements de la liste*/
@@ -24,7 +30,12 @@ li {                                         /*Elements de la liste*/
 	height: 38px;                            /*Taille de l'élément en hauteur*/
 	border:2px solid #92B4F4;                /*Contour des éléments, largeur du contour, type, couleur*/
 	border-radius: 20px;                     /*Arrondi le contour*/
-	                            /*Petite marge autour des cases pour que ca fasse plus propre*/
+	padding: 1px; 
+
+}
+
+li:nth-child(even) {                          /*Change le background des li sur les li impaires*/
+	background-color: #92B4F4;
 }
 
 #message_avertissement_javascript p{

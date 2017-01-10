@@ -19,7 +19,8 @@
 
 var nombreCase= parseInt(prompt('Quel nombre de case souhaitez-vous afficher?'));     //Affiche la question à l'utilisateur et affecte la réponse à la variable en s'assurant que ce soit un nombre//
 var nombre;
-nombre=1;
+nombre = 1;
+
 while (nombre <= nombreCase) {                                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur/:
 	var newLi = document.createElement('li');
 	var newLiText = document.createTextNode(nombre);
@@ -28,3 +29,23 @@ while (nombre <= nombreCase) {                                   //Boucle autant
 	nombre++;                                                    //Ajoute +1 au nombre à chaque tour//
 }
 
+//while (i <100000 && nombre <= nombreCase) {                   //Boucle autant de fois que le nombre de case renseigné par l'utilisateur/:
+	
+	//if(i % 2 == 0)                                            //si i est paire
+	//{
+	//var newLi = document.createElement('li');
+	//var newLiText = document.createTextNode(nombre);
+	//document.getElementById('liste').appendChild(newLi);
+	//newLi.appendChild(newLiText);
+	//newLi.style.backgroundColor = '#92B4F4' ;
+	//nombre++;  
+	//i++;                                                 
+	//else {                                                    //Si i est impaire
+	//var newLi = document.createElement('li');
+	//var newLiText = document.createTextNode(nombre);
+	//document.getElementById('liste').appendChild(newLi);
+	//newLi.appendChild(newLiText);
+	//nombre++;  
+	//i++;                       
+	//}
+//}
