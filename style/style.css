@@ -20,9 +20,16 @@ li {                                         /*Elements de la liste*/
 	align-items: center;                     /*Centrage vertical*/
 	list-style: none;                        /*Enlève les puces de la liste*/
 	color: #5E7CE2;                          /*Couleur de la typo*/
-	width: 40px;                             /*Taille de l'élément en largeur*/
-	height: 40px;                            /*Taille de l'élément en hauteur*/
+	width: 38px;                             /*Taille de l'élément en largeur*/
+	height: 38px;                            /*Taille de l'élément en hauteur*/
 	border:2px solid #92B4F4;                /*Contour des éléments, largeur du contour, type, couleur*/
 	border-radius: 20px;                     /*Arrondi le contour*/
-	margin-right: 2px;                       /*Petite marge autour des cases pour que ca fasse plus propre*/
+	                            /*Petite marge autour des cases pour que ca fasse plus propre*/
 }
+
+#message_avertissement_javascript p{
+	text-align: center;
+	font-size: 1.8em;
+	color: #5E7CE2;
+}
+
